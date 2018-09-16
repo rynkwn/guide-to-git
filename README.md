@@ -13,3 +13,9 @@ If you're a Windows user, it should also automatically install something called 
 3) Run this command: `git clone https://github.com/rynkwn/guide-to-git.git`
 
 You're done!
+
+# To run
+
+# Github
+
+Integrating with github is unnecessary to learn basic git, but it's a good idea if you want to get your hands dirty what what's common in industry (and also some useful related git-fu).
