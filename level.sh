@@ -1,23 +1,21 @@
 #!/bin/sh
 
-function start_level () {
-	
-}
-
-function console () {
-	
-	while [[true]]; do
-		echo test
-	done
-}
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
 function cleanup () {
 	# Cleanup the git directory of this file/folder.
+	clear
+	# git reset --hard 0d1d7fc32
 }
 
-function verify () {
-	# Perform a git check, git status, e.t.c.
-	# Read that into a file.
-	# Compare that with another file
-	# Return if they're identical.
+# Use:
+# sh level.sh 1
+function start_level () {
+	cleanup
+	LEVEL=$1
+
+	cat ${DIR}/res/raws/${LEVEL}.txt
+	echo; echo;
 }
+
+start_level $1

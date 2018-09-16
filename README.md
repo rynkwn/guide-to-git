@@ -16,6 +16,10 @@ You're done!
 
 # To run
 
+`sh start.sh`
+
 # Github
 
-Integrating with github is unnecessary to learn basic git, but it's a good idea if you want to get your hands dirty what what's common in industry (and also some useful related git-fu).
+Integrating with github is unnecessary to learn basic git, but it's a good idea if you want to get your hands dirty what what's common in industry.
+
+To really get the full experience, I recommend creating an account on Github here: https://github.com/
