@@ -21,7 +21,8 @@ Now create a file, let's call it `cat.txt`
 
 If you run `git status` again, the file should come up
 red. This means that there are changes made to the file
-that haven't been saved/committed yet.
+that haven't been saved/committed yet. If it doesn't
+come up red, be sure to save your changes to the file!
 
 _________________
 
@@ -57,3 +58,16 @@ Let's pretend that the changes are pretty bad. You've poked
 something, or your cat ran over your keyboard, and so they
 inserted a lot of text all over your beautiful file.
 
+Thankfull, git has a pretty nice way of undoing that quickly!
+
+If you run `git status`, the file should be red (if you accidentally
+`git add -A` already, run `git reset HEAD .` to take it out of
+consideration.)
+
+You can then run
+`git checkout .`
+
+That'll clean up all changes from the local directory down.
+
+If you look at your file again, it'll be its old 
+pristine pre-change state!
