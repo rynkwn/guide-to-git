@@ -5,6 +5,11 @@ Level 1: Saving your work
 (Status, Add, Commit, Log, and Checkout)
 _________________________________________
 
+_________________
+
+Baby Steps
+_________________
+
 Let's get comfortable using git.
 
 First, try:
@@ -17,4 +22,38 @@ Now create a file, let's call it `cat.txt`
 If you run `git status` again, the file should come up
 red. This means that there are changes made to the file
 that haven't been saved/committed yet.
+
+_________________
+
+Adding Changes
+_________________
+
+Add any extra text to the file you want, and then run:
+`git add -A` 
+(Add all unsaved changes to what we want to commit.)
+
+`git status` will now show the file in green, meaning that
+if we were to commit/save now, all our changes to that
+file would be committed.
+
+Let's do that!
+
+Run `git commit -m "Important cat.txt changes"`
+
+`git status` will show nothing, because everything so far has been
+committed.
+
+You can also run `git log`, which'll display a list of recent commits.
+Your change "Important cat.txt changes" should show up at the top!
+
+_________________
+
+Undo
+_________________
+
+Now make another change to cat.txt
+
+Let's pretend that the changes are pretty bad. You've poked
+something, or your cat ran over your keyboard, and so they
+inserted a lot of text all over your beautiful file.
 
