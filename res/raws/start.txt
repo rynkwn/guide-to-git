@@ -5,12 +5,12 @@ Welcome to Ryan's Guide to Git!
 _________________________________________
 
 To start a level, run:
-`sh level.sh #` (e.g.: sh level.sh 1)
+`sh start.sh #` (e.g.: sh level.sh 1)
 
 Once you think you're done, run:
 `sh verify.sh`
 
-If you want to start over, just run `sh level.sh #` again.
+If you want to start over, just run `sh start.sh #` again.
 
 ______________________________
 

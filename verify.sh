@@ -7,4 +7,10 @@ function verify () {
 	# Read that into a file.
 	# Compare that with another file
 	# Return if they're identical.
+
+	echo; echo _________________________________________
+	echo; echo This doesn\'t work yet! But congratulations!
+	echo; echo _________________________________________
 }
+
+verify $1
