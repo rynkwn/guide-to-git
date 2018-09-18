@@ -1,0 +1,56 @@
+_________________________________________
+
+Level 2: Working together alone
+
+(Branches/Branching)
+_________________________________________
+
+_________________
+
+What are branches?
+_________________
+
+You'll notice that when you run through our favorite command,
+`git status`, there's a line that says something like
+"On branch master".
+
+Branches are a way to organize commits. In industry, they're
+usually used to separate work, so that individuals can commit
+their work without worrying stepping on each other's toes (like
+a cleaner way of everyone on a team simultaneously editing
+the same google doc).
+
+Once you're done with the feature, you usually "merge" back into
+the master branch so that everyone has access to your work.
+
+Master contains commits from Branch A
+      ^
+      |
+      |\ Merge back into Master.
+      | \
+      |  \
+      |   \
+      |    | Commit
+      |    | Commit
+Commit|    | Commit
+      |    ^ Commit
+      |    | Branch A
+      |   /
+      |  /
+      | /
+      |/
+      ^
+      |
+    Master
+
+_________________
+
+Using branches in Git
+_________________
+
+1) Create a branch
+2) Make changes
+3) Checkout to master. (No changes there!)
+4) Checkout to branch (Changes are there.)
+5) Create a new branch from master.
+6) Work on a different set of features.
