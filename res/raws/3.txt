@@ -4,3 +4,33 @@ Level 3: Bringing it together
 
 (Merging)
 _________________________________________
+
+_________________
+
+Back to the drawing board
+_________________
+
+Master contains commits from Branch A
+      ^
+      |
+      |\ Merge back into Master.
+      | \
+      |  \
+      |   \
+      |    | Commit
+      |    | Commit
+Commit|    | Commit
+      |    ^ Commit
+      |    | Branch A
+      |   /
+      |  /
+      | /
+      |/
+      ^
+      |
+    Master
+
+
+In the figure above, you'll notice that we
+eventually "merge" branch A back into master.
+

@@ -89,3 +89,25 @@ that the `new` branch is identical to master.
 Alternatively, you can go to the `experiment`, create a new
 branch `newb`, and you'll find that it starts off identical
 to the `experiment` branch.
+
+_________________
+
+Trimming (Deleting Branches)
+_________________
+
+You might find that `git branch` now shows a lot of branches.
+This can get pretty troublesome. Luckily there are two relevant
+commands:
+
+`git branch -d some_branch`
+
+This'll delete a branch _only_ if the branch you're currently on
+contains all of its commits. So it's a safe way to get rid of branches
+that have already been brought back into master.
+
+You can also do:
+
+`git branch -D some_branch`
+
+Which, because the flag is capitalized, just means "delete this 
+branch. I don't care what the differences are."
