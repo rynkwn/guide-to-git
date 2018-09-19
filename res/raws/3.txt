@@ -54,4 +54,8 @@ Since we branched off of master, and created a special new file,
 `git merge exp` should be quick, clean, and easy.
 
 If you checkout your list of files now, you should see that
-your new file is in master!
+your new file is in master! You can also go ahead and delete
+the `exp` branch now.
+
+So remember. When you say `git merge that_branch`, you're saying
+you want to merge `that_branch` INTO the current branch!
