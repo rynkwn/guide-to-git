@@ -71,3 +71,6 @@ That'll clean up all changes from the local directory down.
 
 If you look at your file again, it'll be its old 
 pristine pre-change state!
+
+(You can also undo specific files a la
+`git checkout cat.txt`)

@@ -48,9 +48,44 @@ _________________
 Using branches in Git
 _________________
 
-1) Create a branch
-2) Make changes
-3) Checkout to master. (No changes there!)
-4) Checkout to branch (Changes are there.)
-5) Create a new branch from master.
-6) Work on a different set of features.
+If you type `git branch`, you should see something
+like:
+
+`* master`
+
+Which just means you're on the master branch, which
+is the default branch. Let's create a new branch
+so we can experiment with some changes.
+
+`git checkout -b experiment`
+
+(The `-b` flag just creates a new branch.) 
+Now. Let's make some changes! Create a file,
+add it, and commit it!
+
+If you type `git log`, you should see your commit
+among the list of changes.
+
+Now let's move back to the master branch!
+
+`git checkout master`
+
+You should notice that none of your changes are there.
+However, if we `git checkout experiment`, then we'll
+find our changes still present.
+
+_________________
+
+Branching off.
+_________________
+
+When you're on branch A, and you create a new branch B,
+then B is "branched" from A.
+
+For example, if you go back to `git checkout master`, create
+a new branch `git checkout -b new`, then you'll notice
+that the `new` branch is identical to master.
+
+Alternatively, you can go to the `experiment`, create a new
+branch `newb`, and you'll find that it starts off identical
+to the `experiment` branch.
