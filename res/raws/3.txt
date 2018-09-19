@@ -34,3 +34,24 @@ Commit|    | Commit
 In the figure above, you'll notice that we
 eventually "merge" branch A back into master.
 
+We'll look into how to do that here.
+
+_________________
+
+Merging (is complete...)
+_________________
+
+First, create a new branch off master. Let's call it `exp`.
+
+So: `git checkout -b exp`
+
+Now create a new file. Do some work on it if you want.
+Once you've added and committed the file, _go back to master_.
+
+Now, call `git merge exp`.
+
+Since we branched off of master, and created a special new file,
+`git merge exp` should be quick, clean, and easy.
+
+If you checkout your list of files now, you should see that
+your new file is in master!
