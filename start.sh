@@ -21,6 +21,11 @@ function start_level () {
 	cleanup
 	LEVEL=$1
 
+	if [ ${LEVEL} -eq "1" ]; then
+		# Do setup for level.
+		echo;
+	fi
+
 	cat ${DIR}/res/raws/${LEVEL}.txt
 	echo; echo;
 }

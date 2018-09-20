@@ -74,3 +74,11 @@ pristine pre-change state!
 
 (You can also undo specific files a la
 `git checkout cat.txt`)
+
+_________________________________________
+
+Assignment Checklist
+_________________________________________
+
+ [ ] Add and commit at least one file!
+ [ ] Create at least 2 more commits.
