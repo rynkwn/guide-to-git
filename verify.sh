@@ -1,6 +1,13 @@
 # Use:
 # sh verify.sh 1
 
+BLACK='\033[0;30m'
+GREEN='\033[0;32m'
+RED='\033[1;31m'
+YELLOW='\033[1;33m'
+BLUE='\033[1;34m'
+WHITE='\033[1;37m'
+
 BASE_COMMIT="b9cee4eda1258"
 
 function num_commits_difference_since_base() {
@@ -22,7 +29,7 @@ function verify () {
 
 	echo; echo;
 	if [ ${LEVEL} -eq "1" ]; then
-		echo Checking level 1...
+		echo Checking level 1...; echo;
 
 		if [ $(num_added_files_since_base) -ge "1" ]; then
 			echo  \[C\] Add and commit at least one file!
@@ -30,7 +37,7 @@ function verify () {
 			echo  \[ \] Add and commit at least one file!
 		fi
 
-		if [ $(num_commits_difference_since_base) -ge "3" ]; then
+		if [ $(num_commits_difference_since_base) -ge "2" ]; then
 			echo  \[C\] Create at least 2 more commits.
 		else
 			echo  \[ \] Create at least 2 more commits.
@@ -50,7 +57,7 @@ else
 	verify $1
 fi
 
-# ttest=$(num_commits_difference_since_base)
-# ttest2=$(num_added_files_since_base)
-# echo ${ttest}
-# echo ${ttest2}
+ttest=$(num_commits_difference_since_base)
+ttest2=$(num_added_files_since_base)
+echo ${ttest}
+echo ${ttest2}

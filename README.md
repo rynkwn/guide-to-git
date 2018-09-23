@@ -1,5 +1,5 @@
 # Ryan's Guide to Git 
-An interactive tutorial to git, no experience required.
+An interactive tutorial to git and github. No experience required.
 
 # To install
 1) Get `git` if you don't already have it!
