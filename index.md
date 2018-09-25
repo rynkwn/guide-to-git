@@ -2,8 +2,7 @@
 sidebar:
   nav: "docs"
 ---
-Test
-{% include navigation.html %}
+Test2
 
 # Welcome to Ryan's Guide to Git 
 An interactive tutorial to git and github. No experience required.
