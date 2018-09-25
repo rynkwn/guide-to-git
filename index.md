@@ -1,8 +1,8 @@
 ---
 sidebar:
-  nav: "toc"
+  nav: "docs"
 ---
-
+Test
 {% include navigation.html %}
 
 # Welcome to Ryan's Guide to Git 
