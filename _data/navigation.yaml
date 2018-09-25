@@ -1,15 +1,15 @@
 toc:
-    - title: Gentle Introductions
-        subfolderitems:
-          - page: [0] What is Git? (Basic Info)
-            url: /guide-to-git.html
-    - title: Just the Basics
-        subfolderitems:
-          - page: [1] Saving your work (Add, Commit, and Checkout)
-            url: /guide-to-git.html
-          - page: [2] Working together alone (Branches)
-            url: /guide-to-git.html
-          - page: [3] Bringing it together (Merging)
-            url: /guide-to-git.html
-          - page: [4] We don't always agree... (Merge Conflicts)
-            url: /guide-to-git.html
+  - title: Gentle Introductions
+    subfolderitems:
+      - page: \[0\] What is Git? (Basic Info)
+        url: /guide-to-git.html
+  - title: Just the Basics
+    subfolderitems:
+      - page: Saving your work (Add, Commit, and Checkout)
+        url: /guide-to-git.html
+      - page: Working together alone (Branches)
+        url: /guide-to-git.html
+      - page: Bringing it together (Merging)
+        url: /guide-to-git.html
+      - page: We don't always agree... (Merge Conflicts)
+        url: /guide-to-git.html
