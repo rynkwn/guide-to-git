@@ -1,6 +1,15 @@
 toc:
-  - title: [0] What is Git? (Basic Info)
-  - title: [1] Saving your work (Add, Commit, and Checkout)
-  - title: [2] Working together alone (Branches)
-  - title: [3] Bringing it together (Merging)
-  - title: [4] We don't always agree... (Merge Conflicts)
+    - title: Gentle Introductions
+        subfolderitems:
+          - page: [0] What is Git? (Basic Info)
+            url: /guide-to-git.html
+    - title: Just the Basics
+        subfolderitems:
+          - page: [1] Saving your work (Add, Commit, and Checkout)
+            url: /guide-to-git.html
+          - page: [2] Working together alone (Branches)
+            url: /guide-to-git.html
+          - page: [3] Bringing it together (Merging)
+            url: /guide-to-git.html
+          - page: [4] We don't always agree... (Merge Conflicts)
+            url: /guide-to-git.html
