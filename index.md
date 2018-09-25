@@ -1,3 +1,8 @@
+---
+sidebar:
+  nav: "toc"
+---
+
 {% include navigation.html %}
 {% include sidebar.html %}
 
