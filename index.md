@@ -1,6 +1,6 @@
 ---
 sidebar:
-  nav: "docs"
+  nav: "toc"
 ---
 Test2
 
