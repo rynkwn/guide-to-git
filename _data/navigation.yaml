@@ -1,15 +1,15 @@
 toc:
   - title: Gentle Introductions
     children:
-      - title: \[0\] What is Git? (Basic Info)
+      - title: "[0] What is Git? (Basic Info)"
         url: /guide-to-git.html
   - title: Just the Basics
     children:
-      - title: Saving your work (Add, Commit, and Checkout)
+      - title: "[1] Saving your work (Add, Commit, and Checkout)"
         url: /guide-to-git.html
-      - title: Working together alone (Branches)
+      - title: "[2] Working together alone (Branches)"
         url: /guide-to-git.html
-      - title: Bringing it together (Merging)
+      - title: "[3] Bringing it together (Merging)"
         url: /guide-to-git.html
-      - title: We don't always agree... (Merge Conflicts)
+      - title: "[4] We don't always agree... (Merge Conflicts)"
         url: /guide-to-git.html
