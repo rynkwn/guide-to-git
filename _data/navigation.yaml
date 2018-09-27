@@ -1,17 +1,17 @@
 toc:
   - title: Home
-    url: /#.html
+    url: /#
   - title: Gentle Introductions
     children:
       - title: "[0] What is Git? (Basic Info)"
-        url: /guide-to-git.html
+        url: /#
   - title: Just the Basics
     children:
       - title: "[1] Saving your work (Add, Commit, and Checkout)"
-        url: /guide-to-git.html
+        url: /#
       - title: "[2] Working together alone (Branches)"
-        url: /guide-to-git.html
+        url: /#
       - title: "[3] Bringing it together (Merging)"
-        url: /guide-to-git.html
+        url: /#
       - title: "[4] We don't always agree... (Merge Conflicts)"
-        url: /guide-to-git.html
+        url: /#
