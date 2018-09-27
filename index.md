@@ -16,9 +16,15 @@ If you're a Windows user, it should also automatically install something called 
 
 You're done!
 
-# To run
+# Instructions
 
-`sh start.sh`
+To start a level, run:
+`sh start.sh #` (e.g.: `sh start.sh 1`)
+
+Once you think you're done, run:
+`sh verify.sh #`
+
+If you want to start over, just run `sh start.sh #` again.
 
 # Github
 

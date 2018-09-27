@@ -1,6 +1,9 @@
 # Welcome to Ryan's Guide to Git 
 An interactive tutorial to git and github. No experience required.
 
+Go to https://rynkwn.github.io/guide-to-git/ for an easier way to view
+levels and instructions!
+
 # To install
 1) Get `git` if you don't already have it!
 Follow the instructions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for your particular machine.
