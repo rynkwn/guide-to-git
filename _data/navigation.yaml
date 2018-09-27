@@ -1,4 +1,8 @@
 toc:
+  - title: Home
+    url: /#.html
+  - title: About
+    url: /#.html
   - title: Gentle Introductions
     children:
       - title: "[0] What is Git? (Basic Info)"
