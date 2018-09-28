@@ -3,7 +3,7 @@ sidebar:
   nav: "toc"
 ---
 
-# Ryan's Guide to Git
+# Description
 
 An interactive tutorial to git and github. No experience required.
 
