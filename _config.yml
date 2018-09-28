@@ -1,3 +1,5 @@
 remote_theme: "mmistakes/minimal-mistakes"
 title: Ryan's Guide to Git
 description: An interactive tutorial to git and github. No experience required.
+
+include: ["_pages"]
