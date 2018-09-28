@@ -2,9 +2,11 @@
 sidebar:
   nav: "toc"
 ---
+# Ryan's Guide to Git
+
 An interactive tutorial to git and github. No experience required.
 
-# To install
+## To install
 1) Get `git` if you don't already have it!
 Follow the instructions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for your particular machine.
 
@@ -16,7 +18,7 @@ If you're a Windows user, it should also automatically install something called 
 
 You're done!
 
-# Instructions
+## Instructions
 
 To start a level, run:
 `sh start.sh #` (e.g.: `sh start.sh 1`)
@@ -26,7 +28,7 @@ Once you think you're done, run:
 
 If you want to start over, just run `sh start.sh #` again.
 
-# Github
+## Github
 
 Integrating with github is unnecessary to learn basic git, but it's a good idea if you want to get your hands dirty what what's common in industry.
 
