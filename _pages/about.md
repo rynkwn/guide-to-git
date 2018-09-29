@@ -1,6 +1,6 @@
 ---
 title: Level 0: What is Git?
-permalink: /0/
+permalink: /about/
 sidebar:
   nav: "toc"
 ---
