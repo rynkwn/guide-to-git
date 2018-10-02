@@ -8,7 +8,7 @@ toc:
   - title: Just the Basics
     children:
       - title: "[1] Saving your work (Add, Commit, and Checkout)"
-        url: /#
+        url: /1/
       - title: "[2] Working together alone (Branches)"
         url: /#
       - title: "[3] Bringing it together (Merging)"
