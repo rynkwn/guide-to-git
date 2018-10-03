@@ -1,7 +1,5 @@
 ---
 title: Ryan's Guide to Git
-sidebar:
-  nav: "toc"
 ---
 
 An interactive tutorial to git and github. No experience required.
