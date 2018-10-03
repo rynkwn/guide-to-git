@@ -4,11 +4,11 @@ toc:
   - title: Gentle Introductions
     children:
       - title: "[0] What is Git? (Basic Info)"
-        url: levels/0/
+        url: /levels/0/
   - title: Just the Basics
     children:
       - title: "[1] Saving your work (Add, Commit, and Checkout)"
-        url: levels/1/
+        url: /levels/1/
       - title: "[2] Working together alone (Branches)"
         url: /#
       - title: "[3] Bringing it together (Merging)"
