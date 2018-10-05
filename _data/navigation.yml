@@ -10,8 +10,8 @@ toc:
       - title: "[1] Saving your work (Add, Commit, and Checkout)"
         url: /levels/1/
       - title: "[2] Working together alone (Branches)"
-        url: /#
+        url: /levels/2/
       - title: "[3] Bringing it together (Merging)"
-        url: /#
+        url: /levels/3/
       - title: "[4] We don't always agree... (Merge Conflicts)"
         url: /#
