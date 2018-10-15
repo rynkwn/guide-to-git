@@ -21,12 +21,27 @@ function start_level () {
 	cleanup
 	LEVEL=$1
 
+	if [ -e ${DIR}/\_pages/${LEVEL}.md ]; then
+		echo Visit this page for clearer instructions: 
+		echo https://rynkwn.github.io/guide-to-git/levels/${LEVEL}/
+		echo ____________________________________
+
+		echo; echo;
+
+		egrep -v '^(---)|(permalink.*)' ${DIR}/\_pages/${LEVEL}.md
+		echo; echo;
+	else
+		echo; echo;
+		echo Sorry, I don\'t recognize ${LEVEL}.
+		echo;
+		echo Add _just_ the number to start a level!
+		echo Example: sh start.sh 1
+		echo; echo;
+	fi
+
 	if [ ${LEVEL} -eq "1" ]; then
 		echo
 	fi
-
-	cat ${DIR}/\_pages/${LEVEL}.md
-	echo; echo;
 }
 
 clear
