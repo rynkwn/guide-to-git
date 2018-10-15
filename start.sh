@@ -25,7 +25,7 @@ function start_level () {
 		echo
 	fi
 
-	cat ${DIR}/res/raws/${LEVEL}.txt
+	cat ${DIR}/\_pages/${LEVEL}.md
 	echo; echo;
 }
 
