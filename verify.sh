@@ -19,6 +19,10 @@ function num_added_files_since_base() {
 	echo "$(($raw_output-1))"
 }
 
+function num_branches() {
+	git branch | wc -l
+}
+
 # Returns -> Success/Error Message.
 function verify () {
 	# Perform a git check, git status, e.t.c.
@@ -28,9 +32,8 @@ function verify () {
 	LEVEL=$1
 
 	echo; echo;
+	echo Checking level ${LEVEL}...; echo;
 	if [ ${LEVEL} -eq "1" ]; then
-		echo Checking level 1...; echo;
-
 		if [ $(num_added_files_since_base) -ge "1" ]; then
 			echo  \[C\] Add and commit at least one file!
 		else
@@ -42,9 +45,18 @@ function verify () {
 		else
 			echo  \[ \] Create at least 2 more commits.
 		fi
+	elif [ ${LEVEL} -eq "2" ]; then
+		if [ $(num_branches) -ge "2" ]; then
+			echo \[C\] Create another branch besides `master`
+		else
+			echo \[ \] Create another branch besides `master`
+		fi
+		 
+		
+ [] Have a commit on that branch that's not on `master`
 	else
 		echo; echo _________________________________________
-		echo; echo This isn\'t done yet, sorry!
+		echo; echo This isn\'t done yet, or isn\'t a real level, sorry!
 		echo; echo _________________________________________
 	fi
 }
