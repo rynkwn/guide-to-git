@@ -23,6 +23,16 @@ function num_branches() {
 	git branch | wc -l
 }
 
+function num_commit_difference_between_branches() {
+	if [ $(git branch | wc -l) -ge "2"]; then
+		second_branch=$(git branch | sed -n 1p)
+		git checkout master
+		echo "$(git diff --stat $second_branch)"
+	fi
+
+	echo '0'
+}
+
 # Returns -> Success/Error Message.
 function verify () {
 	# Perform a git check, git status, e.t.c.
@@ -52,8 +62,11 @@ function verify () {
 			echo \[ \] Create another branch besides `master`
 		fi
 		 
-		
- [] Have a commit on that branch that's not on `master`
+		if [ $(num_commit_difference_between_branches) -ge "1" ]; then
+			echo \[C\] Have a commit on that branch that\'s not on `master`
+		else
+			echo \[ \] Have a commit on that branch that\'s not on `master`
+		fi
 	else
 		echo; echo _________________________________________
 		echo; echo This isn\'t done yet, or isn\'t a real level, sorry!
