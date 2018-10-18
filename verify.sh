@@ -25,9 +25,8 @@ function num_branches() {
 
 function num_commit_difference_between_branches() {
 	if [ $(git branch | wc -l) -ge "2" ]; then
-		second_branch=$(git branch | sed -n 1p)
-		git checkout master
-		echo "$(git diff --stat $second_branch)"
+		second_branch=$(git branch | sed -n 2p)
+		echo "$(git rev-list --count $second_branch ^master)"
 	fi
 
 	echo '0'
