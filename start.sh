@@ -8,7 +8,6 @@ BLUE='\033[1;34m'
 WHITE='\033[1;37m'
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
-TARGET_COMMIT=''
 
 function cleanup () {
 	# Cleanup the git directory of this file/folder.
@@ -40,8 +39,12 @@ function start_level () {
 		echo; echo;
 	fi
 
-	if [ ${LEVEL} -eq "1" ]; then
-		echo
+	if [ ${LEVEL} -eq "3" ]; then
+		# For level 3, we need to create a random file.
+		git checkout -b test_branch
+		echo "Try merging me!" >> tmp.txt
+		git commit -am "Committed a file"
+		git checkout master
 	fi
 }
 
