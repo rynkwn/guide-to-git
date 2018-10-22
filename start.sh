@@ -8,6 +8,7 @@ BLUE='\033[1;34m'
 WHITE='\033[1;37m'
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+TARGET_COMMIT=''
 
 function cleanup () {
 	# Cleanup the git directory of this file/folder.
