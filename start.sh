@@ -11,8 +11,10 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
 function cleanup () {
 	# Cleanup the git directory of this file/folder.
-	clear
+	# git checkout master
 	# git reset --hard 0d1d7fc32
+	# git branch | grep -v "master" | xargs git branch -D 
+	clear
 }
 
 # Use:
