@@ -40,13 +40,9 @@ function verify_level_4() {
 	# We check in this case if we get 0, rather than 1. Just to make things simpler.
 	file_exists=$( (ls tmp.txt >> /dev/null 2>&1 && echo "0") || echo "1" )
 	if [ $file_exists -eq "0" ]; then
-
-		# A dumb check to see if they merged.
-		if [ $(git log -n 10 | grep "guidetogitwashere" | wc -l) -ge "1" ]; then
-			echo "$(grep "HEAD" tmp.txt | wc -l)"
-		else
-			echo "1"
-		fi
+		# There's an edge case where they actually need to merge... and I'm not
+		# sure if there's an easy way to check it.
+		echo "$(grep "HEAD" tmp.txt | wc -l)"
 	else
 		echo "1"
 	fi
@@ -93,6 +89,10 @@ function verify () {
 			echo \[ \] When you start this level, there\'ll be a new branch \(test_branch\). Merge that into master\!
 		fi
 	elif [ ${LEVEL} -eq "4" ]; then
+		echo As a heads-up... it\s not easy to check 
+		echo if you actually merged\! So be sure you do before trusting this\!
+		echo; echo;
+
 		if [ $(verify_level_4) -eq "0" ]; then
 			echo \[C\] When you start this level, there\'ll be a new branch \(test_branch\) that\'ll have some conflicts. Merge that into master\!
 		else
