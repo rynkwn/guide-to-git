@@ -55,10 +55,11 @@ function start_level () {
 		echo "I'm the original!" >> tmp.txt
 		git add -A >> /dev/null 2>&1 && git commit -m "I added a file" >> /dev/null 2>&1
 		git checkout -b test_branch >> /dev/null 2>&1
-		rm tmp.txt
 		echo "No, I'm the original!" >> tmp.txt
-		git add -A >> /dev/null 2>&1 && git commit -m "I also added a file" >> /dev/null 2>&1
+		git add -A >> /dev/null 2>&1 && git commit -m "I also added a file. Also, secret code guidetogitwashere" >> /dev/null 2>&1
 		git checkout master >> /dev/null 2>&1
+		echo "Here's some more work!" >> tmp.txt
+		git add -A >> /dev/null 2>&1 && git commit -m "I added another file" >> /dev/null 2>&1
 	fi
 }
 
