@@ -84,7 +84,7 @@ function verify () {
 		fi
 	else
 		echo; echo _________________________________________
-		echo; echo This isn\'t done yet, or isn\'t a real level, sorry!
+		echo; echo Hmm. That doesn\t seem to be a level\! \(Right now, we have 1-4\).
 		echo; echo _________________________________________
 	fi
 }

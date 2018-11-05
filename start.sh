@@ -52,7 +52,12 @@ function start_level () {
 	if [ ${LEVEL} -eq "4" ]; then
 		# For level 4, we need to add a file to master.
 		# Then create another file on another branch that'll conflict.
-		echo "Try merging me!" >> tmp.txt
+		echo "I'm the original!" >> tmp.txt
+		git commit -am "Added a commit"
+		git checkout -b test_branch
+		echo "No, I'm the original!" >> tmp.txt
+		git commit -am "I also added a commit"
+		git checkout master
 	fi
 }
 
