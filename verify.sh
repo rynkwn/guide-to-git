@@ -65,7 +65,7 @@ function verify () {
 			echo  \[ \] Add and commit at least one file!
 		fi
 
-		if [ $(num_commits_difference_since_base) -ge "2" ]; then
+		if [ $(num_commits_difference_since_base) -ge "3" ]; then
 			echo  \[C\] Create at least 2 more commits.
 		else
 			echo  \[ \] Create at least 2 more commits.
