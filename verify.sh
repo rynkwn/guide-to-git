@@ -42,7 +42,7 @@ function verify_level_4() {
 	if [ $file_exists -eq "0" ]; then
 
 		# A dumb check to see if they merged.
-		if [ $(git log -n 10 | grep "guidetogitwashere" | wc -l) ]; then
+		if [ $(git log -n 10 | grep "guidetogitwashere" | wc -l) -ge "1" ]; then
 			echo "$(grep "HEAD" tmp.txt | wc -l)"
 		else
 			echo "1"
