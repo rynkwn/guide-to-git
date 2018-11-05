@@ -45,7 +45,7 @@ function start_level () {
 		# For level 3, we need to create a random file.
 		git checkout -b test_branch
 		echo "Try merging me!" >> tmp.txt
-		git commit -am "Committed a file"
+		git add -A && git commit -m "Committed a file"
 		git checkout master
 	fi
 
@@ -53,10 +53,10 @@ function start_level () {
 		# For level 4, we need to add a file to master.
 		# Then create another file on another branch that'll conflict.
 		echo "I'm the original!" >> tmp.txt
-		git commit -am "Added a commit"
+		git add -A && git commit -m "I added a file"
 		git checkout -b test_branch
 		echo "No, I'm the original!" >> tmp.txt
-		git commit -am "I also added a commit"
+		git add -A && git commit -m "I also added a file"
 		git checkout master
 	fi
 }
