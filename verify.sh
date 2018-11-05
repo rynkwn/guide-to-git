@@ -8,7 +8,7 @@ YELLOW='\033[1;33m'
 BLUE='\033[1;34m'
 WHITE='\033[1;37m'
 
-BASE_COMMIT="4efe93b45356ba"
+BASE_COMMIT="da82f3e71dce"
 
 function num_commits_difference_since_base() {
 	git log ${BASE_COMMIT}..HEAD --pretty=oneline | wc -l
