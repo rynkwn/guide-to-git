@@ -76,7 +76,12 @@ function verify () {
 		else
 			echo \[ \] When you start this level, there\'ll be a new branch \(test_branch\). Merge that into master\!
 		fi
-		 
+	elif [ ${LEVEL} -eq "4" ]; then
+		if [ $(verify_level_3) -ge "1" ]; then
+			echo \[C\] When you start this level, there\'ll be a new branch \(test_branch\) that\'ll have some conflicts. Merge that into master\!
+		else
+			echo \[ \] When you start this level, there\'ll be a new branch \(test_branch\) that\'ll have some conflicts. Merge that into master\!
+		fi
 	else
 		echo; echo _________________________________________
 		echo; echo This isn\'t done yet, or isn\'t a real level, sorry!
