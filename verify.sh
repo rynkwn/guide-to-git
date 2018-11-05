@@ -40,7 +40,13 @@ function verify_level_4() {
 	# We check in this case if we get 0, rather than 1. Just to make things simpler.
 	file_exists=$( (ls tmp.txt >> /dev/null 2>&1 && echo "0") || echo "1" )
 	if [ $file_exists -eq "0" ]; then
-		echo "$(grep "HEAD" tmp.txt | wc -l)"
+
+		# A dumb check to see if they merged.
+		if [ $(git log -n 10 | grep "guidetogitwashere" | wc -l) ]; then
+			echo "$(grep "HEAD" tmp.txt | wc -l)"
+		else
+			echo "1"
+		fi
 	else
 		echo "1"
 	fi
