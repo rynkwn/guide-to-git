@@ -32,6 +32,10 @@ function num_commit_difference_between_branches() {
 	fi
 }
 
+function verify_level_3() {
+	echo "$(git log -n 4 | grep "Committed a file" | wc -l)"
+}
+
 # Returns -> Success/Error Message.
 function verify () {
 	# Perform a git check, git status, e.t.c.
@@ -66,6 +70,13 @@ function verify () {
 		else
 			echo \[ \] Have a commit on that branch that\'s not on master
 		fi
+	elif [ ${LEVEL} -eq "3" ]; then
+		if [ $(verify_level_3) -ge "1" ]; then
+			echo \[C\] When you start this level, there\'ll be a new branch \(test_branch\). Merge that into master\!
+		else
+			echo \[ \] When you start this level, there\'ll be a new branch \(test_branch\). Merge that into master\!
+		fi
+		 
 	else
 		echo; echo _________________________________________
 		echo; echo This isn\'t done yet, or isn\'t a real level, sorry!
