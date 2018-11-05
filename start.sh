@@ -48,6 +48,12 @@ function start_level () {
 		git commit -am "Committed a file"
 		git checkout master
 	fi
+
+	if [ ${LEVEL} -eq "4" ]; then
+		# For level 4, we need to add a file to master.
+		# Then create another file on another branch that'll conflict.
+		echo "Try merging me!" >> tmp.txt
+	fi
 }
 
 clear
