@@ -36,6 +36,16 @@ function verify_level_3() {
 	echo "$(git log -n 4 | grep "Committed a file" | wc -l)"
 }
 
+function verify_level_4() {
+	# We check in this case if we get 0, rather than 1. Just to make things simpler.
+	file_exists=$( (ls tmp.txt >> /dev/null 2>&1 && echo "0") || echo "1" )
+	if [ $file_exists -ge "0" ]; then
+		echo "$(grep "HEAD" tmp.txt | wc -l)"
+	else
+		echo "1"
+	fi
+}
+
 # Returns -> Success/Error Message.
 function verify () {
 	# Perform a git check, git status, e.t.c.
@@ -77,7 +87,7 @@ function verify () {
 			echo \[ \] When you start this level, there\'ll be a new branch \(test_branch\). Merge that into master\!
 		fi
 	elif [ ${LEVEL} -eq "4" ]; then
-		if [ $(verify_level_3) -ge "1" ]; then
+		if [ $(verify_level_4) -eq "0" ]; then
 			echo \[C\] When you start this level, there\'ll be a new branch \(test_branch\) that\'ll have some conflicts. Merge that into master\!
 		else
 			echo \[ \] When you start this level, there\'ll be a new branch \(test_branch\) that\'ll have some conflicts. Merge that into master\!
@@ -97,7 +107,4 @@ else
 	verify $1
 fi
 
-ttest=$(num_commits_difference_since_base)
-ttest2=$(num_added_files_since_base)
-echo ${ttest}
-echo ${ttest2}
+verify_level_4
