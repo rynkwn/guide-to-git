@@ -39,7 +39,7 @@ function verify_level_3() {
 function verify_level_4() {
 	# We check in this case if we get 0, rather than 1. Just to make things simpler.
 	file_exists=$( (ls tmp.txt >> /dev/null 2>&1 && echo "0") || echo "1" )
-	if [ $file_exists -ge "0" ]; then
+	if [ $file_exists -eq "0" ]; then
 		echo "$(grep "HEAD" tmp.txt | wc -l)"
 	else
 		echo "1"
@@ -106,5 +106,3 @@ if [ $# -eq 0 ]; then
 else
 	verify $1
 fi
-
-verify_level_4
