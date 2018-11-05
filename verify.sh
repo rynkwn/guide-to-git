@@ -59,7 +59,7 @@ function verify () {
 	echo; echo;
 	echo Checking level ${LEVEL}...; echo;
 	if [ ${LEVEL} -eq "1" ]; then
-		if [ $(num_added_files_since_base) -ge "1" ]; then
+		if [ $(num_added_files_since_base) -ge "2" ]; then
 			echo  \[C\] Add and commit at least one file!
 		else
 			echo  \[ \] Add and commit at least one file!
